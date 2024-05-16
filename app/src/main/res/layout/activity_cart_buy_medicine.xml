@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medicinebackground"
+    tools:context=".CartBuyMedicineActivity">
+
+
+    <Button
+        android:id="@+id/CartMedicineCheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thanh Toán"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@drawable/btnmedicine"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineDate" />
+
+    <TextView
+        android:id="@+id/CartMedicineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="QT Hospital"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CartMedicineTitle2"
+        android:layout_width="309dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/CartMedicineTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:text="Giỏ hàng thuốc"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineTitle" />
+
+    <TextView
+        android:id="@+id/CartMedicineTitle3"
+        android:layout_width="315dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Các loại thuốc"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineTitle2" />
+
+    <Button
+        android:id="@+id/CartMedicineBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Quay lại"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@drawable/btnmedicine"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineDate" />
+
+    <ListView
+        android:id="@+id/CartMedicineListView"
+        android:layout_width="379dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Xin chào"
+        android:textAlignment="center"
+        android:textColor="#EDE1E1"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineTitle3" />
+
+    <TextView
+        android:id="@+id/CartMedicineTotal"
+        android:layout_width="236dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineListView" />
+
+    <TextView
+        android:id="@+id/CartMedicineTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Chọn ngày"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineTotal" />
+
+    <Button
+        android:id="@+id/CartMedicineDate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="13/05/2024"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartMedicineTextDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
